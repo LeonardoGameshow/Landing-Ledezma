@@ -187,3 +187,54 @@
 }
 
 .animar-video { opacity: 0; }
+
+.features li::before {
+  background: var(--bullet-color, #2fa39a);
+}
+
+.product-card { --bullet-color: #2fa39a; }
+.product-card.green-active { --bullet-color: #b4c43b; }
+.product-card.orange-active { --bullet-color: #f39a5f; }
+
+.aling-precios{
+  text-align: left;
+}
+
+.btn-wsp {
+  width: 100%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  margin-top: 0.8rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: white;
+}
+
+/* CARD AZUL */
+.blue-card .btn-wsp {
+  background: #04a9a4;
+}
+
+.blue-card .btn-wsp:hover {
+  background: #038f8a;
+}
+
+/* CARD VERDE */
+.green-card .btn-wsp {
+  background: #b7c242;
+}
+
+.green-card .btn-wsp:hover {
+  background: #9faa35;
+}
+
+/* CARD NARANJA */
+.orange-card .btn-wsp {
+  background: #f5a46c;
+}
+
+.orange-card .btn-wsp:hover {
+  background: #e38d4f;
+}
