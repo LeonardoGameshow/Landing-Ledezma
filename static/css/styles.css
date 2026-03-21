@@ -1,3 +1,44 @@
+body {
+  margin-top: 5.2rem;
+}
+/*Estilos de la sección header*/
+/*Navbar*/
+.navbar {
+  background-color: rgba(255, 255, 255, 0.7) !important; /* transparencia */
+  backdrop-filter: blur(10px); /* efecto vidrio */
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-nav {
+  margin-left: 12rem;
+  gap: 3rem;
+}
+
+.navbar-nav .nav-link {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 2.813rem;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-nav .nav-link:hover {
+  background-color: rgba(0, 0, 0, 0.08); /* iluminación suave */
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.15); /* sombra */
+}
+/*Fin navbar*7
+/*Titulo y slogan*/
+.header-container {
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.video{
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+/*Fin titulo y slogan*/
+/*Fin de los estilos de la sección header*/
+
 .product-card {
   background: #d0e6df;
   border-radius: 1rem;
