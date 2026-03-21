@@ -1,13 +1,196 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aledezma</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1></h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="static/css/styles.css">
+
+  <!-- FONTS GOOGLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>Aledezma</title>
+</head>
+
+<body>
+  <h1>Distribuidora Ledezma</h1>
+
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+
+      <!-- CARD 1 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="product-card blue-card">
+
+          <div class="img-circle">
+            <img src="static/img/panales/abierto.png" class="product-img"
+              data-m="static/img/panales/pull up mediano.png" data-g="static/img/panales/pull up grande.png">
+          </div>
+
+          <h5 class="title">Pañal <span>abierto</span></h5>
+
+          <div class="product-tabs">
+            <button class="tab-btn active" data-target="1" data-talla="m">MEDIANO</button>
+            <button class="tab-btn" data-target="1" data-talla="g">GRANDE</button>
+          </div>
+
+          <div class="tab-content">
+
+            <div class="tab-panel active" data-talla="m">
+              <p class="subtitle">
+                <strong>Máxima absorción y comodidad.</strong><br>
+                Fácil de usar, con o sin ayuda.
+              </p>
+
+              <ul class="features">
+                <li class="desc-pull-m">Ajuste seguro con pestañas adhesivas</li>
+                <li class="desc-pull-m">Protección contra filtraciones y olores</li>
+              </ul>
+
+              <p class="extra">
+                Comodidad todo el día, sin complicaciones.
+              </p>
+            </div>
+
+            <div class="tab-panel" data-talla="g">
+              <p class="subtitle">
+                <strong>Máxima absorción y comodidad.</strong><br>
+                Fácil de usar, con o sin ayuda.
+              </p>
+
+              <ul class="features">
+                <li class="desc-pull-g">Ajuste seguro con pestañas adhesivas</li>
+                <li class="desc-pull-g">Protección contra filtraciones y olores</li>
+              </ul>
+
+              <p class="extra">
+                Comodidad todo el día, sin complicaciones.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CARD 2 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="product-card green-card">
+
+          <div class="img-circle green">
+            <img src="static/img/panales/calzon.png" class="product-img" data-m="static/img/panales/calzon mediano.png"
+              data-g="static/img/panales/calzon grande.png">
+          </div>
+
+          <h5 class="title green-text">
+            Ropa interior <span id="des">Desechable</span>
+          </h5>
+
+          <div class="product-tabs">
+            <button class="tab-btn active" data-target="2" data-talla="m">MEDIANO</button>
+            <button class="tab-btn" data-target="2" data-talla="g">GRANDE</button>
+          </div>
+
+          <div class="tab-content">
+
+            <div class="tab-panel active" data-talla="m">
+              <p class="subtitle">
+                <strong>Se mueve contigo.</strong><br>
+                Fácil de usar, ideal para adultos activos con incontinencia leve a moderada.
+              </p>
+
+              <ul class="features">
+                <li class="desc-cal-m">Discreción y comodidad como ropa interior</li>
+                <li class="desc-cal-m">Suave, transpirable y fácil de usar</li>
+              </ul>
+
+              <p class="extra">
+                Se adapta a tu día a día.
+              </p>
+            </div>
+
+            <div class="tab-panel" data-talla="g">
+              <p class="subtitle">
+                <strong>Se mueve contigo.</strong><br>
+                Fácil de usar, ideal para adultos activos con incontinencia leve a moderada.
+              </p>
+
+              <ul class="features">
+                <li class="desc-cal-g">Discreción y comodidad como ropa interior</li>
+                <li class="desc-cal-g">Suave, transpirable y fácil de usar</li>
+              </ul>
+
+              <p class="extra">
+                Se adapta a tu día a día.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CARD 3 -->
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="product-card orange-card">
+
+          <div class="img-circle orange">
+            <img src="static/img/panales/predo.png" class="product-img unitalla-img"
+              data-base="static/img/panales/predo.png" data-active="static/img/panales/predoblado.png">
+          </div>
+
+          <h5 class="title orange-text">
+            Pañal <span id="pato">predoblado</span>
+          </h5>
+
+          <div class="product-tabs">
+            <button class="tab-btn unitalla-btn active" data-talla="unitalla">
+              UNITALLA
+            </button>
+          </div>
+
+          <div class="tab-content">
+
+            <div class="tab-panel active">
+              <p class="subtitle">
+                <strong>Protección mientras descansas.</strong><br>
+                Fácil de usar, ideal para uso nocturno, viajes o recuperación.
+              </p>
+
+              <ul class="features">
+                <li class="desc-predo">Protege superficies</li>
+                <li class="desc-predo">Base antiderrapante</li>
+              </ul>
+
+              <p class="extra">
+                Duerme con confianza y comodidad.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
