@@ -109,3 +109,15 @@ document.querySelectorAll('.btn-wsp').forEach(btn => {
   });
 
 });
+
+const slides = document.querySelectorAll('.delivery-card');
+let currentIndex = 0;
+
+function showNextSlide() {
+  slides[currentIndex].classList.remove('active');
+  currentIndex = (currentIndex + 1) % slides.length;
+  slides[currentIndex].classList.add('active');
+}
+
+// Cambia cada 5 segundos para dar tiempo a leer el texto más grande
+setInterval(showNextSlide, 5000);
