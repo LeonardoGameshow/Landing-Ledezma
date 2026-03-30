@@ -121,3 +121,33 @@ function showNextSlide() {
 
 // Cambia cada 5 segundos para dar tiempo a leer el texto más grande
 setInterval(showNextSlide, 5000);
+
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const faqItem = button.parentElement;
+    
+    // Opcional: Cerrar otros acordeones al abrir uno nuevo
+    // document.querySelectorAll('.faq-item').forEach(item => {
+    //   if(item !== faqItem) item.classList.remove('active');
+    // });
+
+    faqItem.classList.toggle('active');
+  });
+});
+
+const boton = document.getElementById('btnFlotante');
+const footer = document.querySelector('.footer');
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            boton.classList.add('subir');
+        } else {
+            boton.classList.remove('subir');
+        }
+    });
+}, {
+    threshold: 0.1 // Se activa en cuanto asoma el 10% del footer
+});
+
+observer.observe(footer);
