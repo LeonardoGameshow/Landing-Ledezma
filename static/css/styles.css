@@ -20,7 +20,9 @@ body {
 }
 
 .navbar-nav .nav-link {
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
   border-radius: 2.813rem;
   padding: 0.5rem 1rem;
 }
@@ -38,7 +40,7 @@ body {
 /*Fin titulo y slogan*/
 
 /*Video*/
-.video-container{
+.video-container {
   text-align: center;
   padding-bottom: 2.5rem;
 }
@@ -52,7 +54,7 @@ body {
 }
 /*Fin video*/
 
-/*=========Fin de los estilos de la sección header====================*/
+/*================Estilos de la sección beneficios====================*/
 /* Sección */
 
 .beneficios {
@@ -84,7 +86,9 @@ body {
   background: linear-gradient(135deg, #275dca, #8ab3ff);
   color: white;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Hover */
@@ -97,7 +101,6 @@ body {
 .card h3 {
   margin-bottom: 0.5rem;
 }
-/*================Estilos de la sección beneficios====================*/
 
 /*=========Fin de los estilos de la sección beneficios================*/
 
@@ -106,19 +109,23 @@ body {
   border-radius: 1rem;
   padding: 1.5rem;
   text-align: center;
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   overflow: hidden;
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
 }
 
-.animar { opacity: 0; }
+.animar {
+  opacity: 0;
+}
 
 .product-card:hover {
   transform: translateY(-0.5rem) scale(1.02);
-  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, .15);
+  box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.15);
 }
 
-.img-circle { margin-bottom: -0.8rem; }
+.img-circle {
+  margin-bottom: -0.8rem;
+}
 
 .product-img {
   width: 10rem;
@@ -128,10 +135,12 @@ body {
 
 .product-card h5 {
   font-weight: 600;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
 
-.product-card p { color: #6b7280; }
+.product-card p {
+  color: #6b7280;
+}
 
 .product-tabs {
   display: flex;
@@ -179,13 +188,21 @@ body {
 }
 
 .tab-btn:focus,
-.tab-btn:active { outline: none; }
+.tab-btn:active {
+  outline: none;
+}
 
-.tab-content { margin-top: 0.5rem; }
+.tab-content {
+  margin-top: 0.5rem;
+}
 
-.tab-panel { display: none; }
+.tab-panel {
+  display: none;
+}
 
-.tab-panel.active { display: block; }
+.tab-panel.active {
+  display: block;
+}
 
 .title {
   font-size: 1.6rem;
@@ -201,7 +218,9 @@ body {
   font-style: normal;
 }
 
-#des { font-size: 1.1rem; }
+#des {
+  font-size: 1.1rem;
+}
 
 #pato {
   font-weight: 700;
@@ -209,7 +228,9 @@ body {
   text-align: left;
 }
 
-.blue-card .title { color: #04a9a4; }
+.blue-card .title {
+  color: #04a9a4;
+}
 
 .green-card .title {
   color: #a1ac31;
@@ -236,7 +257,9 @@ body {
   text-align: left;
 }
 
-.subtitle strong { color: #333; }
+.subtitle strong {
+  color: #333;
+}
 
 .features {
   padding-left: 1.2rem;
@@ -250,9 +273,15 @@ body {
   text-align: left;
 }
 
-.blue-card .features li::marker { color: #04a9a4; }
-.green-card .features li::marker { color: #b7c242; }
-.orange-card .features li::marker { color: #f5a46c; }
+.blue-card .features li::marker {
+  color: #04a9a4;
+}
+.green-card .features li::marker {
+  color: #b7c242;
+}
+.orange-card .features li::marker {
+  color: #f5a46c;
+}
 
 .extra {
   font-size: 0.85rem;
@@ -262,7 +291,9 @@ body {
   text-align: left;
 }
 
-.tab-content { margin-top: 0.3rem; }
+.tab-content {
+  margin-top: 0.3rem;
+}
 
 .desc-pull-m::marker {
   color: #000000;
@@ -289,17 +320,25 @@ body {
   font-weight: bold;
 }
 
-.animar-video { opacity: 0; }
+.animar-video {
+  opacity: 0;
+}
 
 .features li::before {
   background: var(--bullet-color, #2fa39a);
 }
 
-.product-card { --bullet-color: #2fa39a; }
-.product-card.green-active { --bullet-color: #b4c43b; }
-.product-card.orange-active { --bullet-color: #f39a5f; }
+.product-card {
+  --bullet-color: #2fa39a;
+}
+.product-card.green-active {
+  --bullet-color: #b4c43b;
+}
+.product-card.orange-active {
+  --bullet-color: #f39a5f;
+}
 
-.aling-precios{
+.aling-precios {
   text-align: left;
 }
 
@@ -355,19 +394,17 @@ body {
     font-size: 0.95rem;
   }
 
-    .header-container {
+  .header-container {
     padding: 1.5rem 2.5rem;
   }
-  
+
   .video-container video {
     max-width: 80%;
   }
 }
 
-
 /* Celulares */
 @media (max-width: 768px) {
-
   .navbar {
     flex-direction: column;
     padding: 0.5rem;
@@ -393,7 +430,6 @@ body {
     border-radius: 10px;
   }
 }
-
 
 /* Celulares pequeños */
 @media (max-width: 480px) {

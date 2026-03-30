@@ -104,8 +104,10 @@
 
         <div class="card">
           <h3>Alta Calidad</h3>
-          <p>Pañales certificados, suaves y ultra-absorbentes. 
-            Satisfacción garantizada para el consumidor final.</p>
+          <p>
+            Pañales certificados, suaves y ultra-absorbentes. Satisfacción
+            garantizada para el consumidor final.
+          </p>
         </div>
 
         <div class="card">
@@ -356,23 +358,5 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      const video = document.getElementById("miVideo");
-
-      video.addEventListener("click", () => {
-        if (video.paused) {
-          video.play();
-          video.controls = true; // aparecen controles
-        } else {
-          video.pause();
-        }
-      });
-
-      // Opcional: quitar controles cuando termina
-      video.addEventListener("ended", () => {
-        video.controls = false;
-      });
-    </script>
   </body>
 </html>
