@@ -1,463 +1,527 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="static/css/styles.css" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <link rel="stylesheet" href="static/css/styles.css" />
+    <!-- FONTS GOOGLE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Distribuidora Ledezma</title>
+  </head>
 
-  <!-- FONTS GOOGLE -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <title>Distribuidora Ledezma</title>
-</head>
-
-<body>
-  <!------------------Sección Nabvar------------------------->
-  <section>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Distribuidora Ledezma</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            <a class="nav-link" href="#">Beneficios</a>
-            <a class="nav-link" href="#">Catalogo</a>
-            <a class="nav-link" href="#">Entregas</a>
-            <a class="nav-link" href="#">Disponibilidad y Reseñas</a>
-            <a class="nav-link" href="#">FAQ</a>
+  <body>
+    <!------------------Sección Nabvar------------------------->
+    <section>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Distribuidora Ledezma</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              <a class="nav-link" href="#">Beneficios</a>
+              <a class="nav-link" href="#">Catalogo</a>
+              <a class="nav-link" href="#">Entregas</a>
+              <a class="nav-link" href="#">Disponibilidad y Reseñas</a>
+              <a class="nav-link" href="#">FAQ</a>
+            </div>
           </div>
         </div>
-      </div>
-    </nav>
-    <!------------------------Final de la Sección nabvar--------------------->
-    <!--------------------------Sección header------------------------------->
-    <div class="header-container">
-      <h2>Calidad que abraza, distribución que cumple.</h2>
-      <p>
-        Tu aliado confiable en distribución mayorista de pañales. Precios
-        competitivos, stock permanente y logística de primer nivel para tu
-        negocio.
-      </p>
-    </div>
-    <div class="video-container">
-      <video id="miVideo" controls>
-        <source src="static/video/confortia1.mp4" type="video/mp4" />
-      </video>
-    </div>
-    <!------------------Fin de la sección header--------------------------------->
-  </section>
-
-  <!-------------------------Sección Beneficios-------------------------------->
-  <section>
-    <div class="beneficios">
-      <h2>Beneficios de distribuir con ---------</h2>
-      <p>
-        Todo lo que necesitas para hacer crecer tu negocio de pañales de
-        pañales con la mejor rentabilidad.
-      </p>
-    </div>
-    <div class="cards-container">
-      <div class="card">
-        <h3>Precios Competitivos</h3>
+      </nav>
+      <!------------------------Final de la Sección nabvar--------------------->
+      <!--------------------------Sección header------------------------------->
+      <div class="header-container">
+        <h2>Calidad que abraza, distribución que cumple.</h2>
         <p>
-          Margen de ganancia optimizado para tu negocio. Precios mayoristas
-          exclusivos para distribuidores registrados.
+          Tu aliado confiable en distribución mayorista de pañales. Precios
+          competitivos, stock permanente y logística de primer nivel para tu
+          negocio.
         </p>
       </div>
-
-      <div class="card">
-        <h3>Alta Calidad</h3>
-        <p>Pañales certificados, suaves y ultra-absorbentes.
-          Satisfacción garantizada para el consumidor final.</p>
+      <div class="video-container">
+        <video id="miVideo" controls>
+          <source src="static/video/confortia1.mp4" type="video/mp4" />
+        </video>
       </div>
+      <!------------------Fin de la sección header--------------------------------->
+    </section>
 
-      <div class="card">
-        <h3>Variedad de productos</h3>
-        <p>Diferentes líneas para cubrir todo tipo de clientes.</p>
+    <!-------------------------Sección Beneficios-------------------------------->
+    <section>
+      <div class="benefits">
+        <h2>Beneficios de distribuir con ---------</h2>
+        <p>
+          Todo lo que necesitas para hacer crecer tu negocio de pañales de
+          pañales con la mejor rentabilidad.
+        </p>
       </div>
+      <div class="cards-container">
+        <div class="card">
+          <h3>Precios Competitivos</h3>
+          <p>
+            Margen de ganancia optimizado para tu negocio. Precios mayoristas
+            exclusivos para distribuidores registrados.
+          </p>
+        </div>
 
-      <div class="card">
-        <h3>Stock disponible</h3>
-        <p>Siempre tendrás productos listos para vender.</p>
+        <div class="card">
+          <h3>Alta Calidad</h3>
+          <p>
+            Pañales certificados, suaves y ultra-absorbentes. Satisfacción
+            garantizada para el consumidor final.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Variedad de productos</h3>
+          <p>Diferentes líneas para cubrir todo tipo de clientes.</p>
+        </div>
+
+        <div class="card">
+          <h3>Stock disponible</h3>
+          <p>Siempre tendrás productos listos para vender.</p>
+        </div>
       </div>
-    </div>
-  </section>
-  <!-------------------------Fin de la sección Beneficios---------------------->
-  <!-- products section -->
-  <section class="product-section">
-    <div class="container">
-      <div class="row g-4 justify-content-center">
-        <!-- CARD 1 -->
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="product-card blue-card">
-            <div class="img-circle">
-              <img src="static/img/panales/abierto.png" class="product-img"
-                data-m="static/img/panales/pull up mediano.png" data-g="static/img/panales/pull up grande.png" />
-            </div>
-
-            <h5 class="title">Pañal <span>abierto</span></h5>
-
-            <div class="product-tabs">
-              <button class="tab-btn active" data-target="1" data-talla="m">
-                MEDIANO
-              </button>
-              <button class="tab-btn" data-target="1" data-talla="g">
-                GRANDE
-              </button>
-            </div>
-
-            <div class="tab-content">
-              <div class="tab-panel active" data-talla="m">
-                <p class="subtitle">
-                  <strong>Máxima absorción y comodidad.</strong><br />
-                  Fácil de usar, con o sin ayuda.
-                </p>
-
-                <p class="aling-precios">PRECIOS</p>
-                <ul class="features">
-                  <li class="desc-pull-m">CAJA: $9 millones + IVA</li>
-                  <li class="desc-pull-m">UNITARIO: $2 + IVA</li>
-                </ul>
-                <p class="aling-precios">Caracteristicas</p>
-
-                <ul class="features">
-                  <li class="desc-pull-m">
-                    Ajuste seguro con pestañas adhesivas
-                  </li>
-                  <li class="desc-pull-m">
-                    Protección contra filtraciones y olores
-                  </li>
-                </ul>
-
-                <p class="extra">
-                  Comodidad todo el día, sin complicaciones.
-                </p>
+    </section>
+    <!-------------------------Fin de la sección Beneficios---------------------->
+    <!-- products section -->
+    <section class="product-section">
+      <div class="container">
+        <div class="row g-4 justify-content-center">
+          <!-- CARD 1 -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card blue-card">
+              <div class="img-circle">
+                <img
+                  src="static/img/panales/abierto.png"
+                  class="product-img"
+                  data-m="static/img/panales/pull up mediano.png"
+                  data-g="static/img/panales/pull up grande.png"
+                />
               </div>
 
-              <div class="tab-panel" data-talla="g">
-                <p class="subtitle">
-                  <strong>Máxima absorción y comodidad.</strong><br />
-                  Fácil de usar, con o sin ayuda.
-                </p>
+              <h5 class="title">Pañal <span>abierto</span></h5>
 
-                <p class="aling-precios">PRECIOS</p>
-                <ul class="features">
-                  <li class="desc-pull-m">CAJA: $9 millones + IVA</li>
-                  <li class="desc-pull-m">UNITARIO: $2 + IVA</li>
-                </ul>
-                <p class="aling-precios">Caracteristicas</p>
-
-                <ul class="features">
-                  <li class="desc-pull-g">
-                    Ajuste seguro con pestañas adhesivas
-                  </li>
-                  <li class="desc-pull-g">
-                    Protección contra filtraciones y olores
-                  </li>
-                </ul>
-
-                <p class="extra">
-                  Comodidad todo el día, sin complicaciones.
-                </p>
-              </div>
-              <button class="btn-wsp" data-producto="Pañal abierto">
-                Click para info
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <!-- CARD 2 -->
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="product-card green-card">
-            <div class="img-circle green">
-              <img src="static/img/panales/calzon.png" class="product-img"
-                data-m="static/img/panales/calzon mediano.png" data-g="static/img/panales/calzon grande.png" />
-            </div>
-
-            <h5 class="title green-text">
-              Ropa interior <span id="des">Desechable</span>
-            </h5>
-
-            <div class="product-tabs">
-              <button class="tab-btn active" data-target="2" data-talla="m">
-                MEDIANO
-              </button>
-              <button class="tab-btn" data-target="2" data-talla="g">
-                GRANDE
-              </button>
-            </div>
-
-            <div class="tab-content">
-              <div class="tab-panel active" data-talla="m">
-                <p class="subtitle">
-                  <strong>Se mueve contigo.</strong><br />
-                  Fácil de usar, ideal para adultos activos con incontinencia
-                  leve a moderada.
-                </p>
-                <p class="aling-precios">PRECIOS</p>
-                <ul class="features">
-                  <li class="desc-pull-m">CAJA: $9 millones + IVA</li>
-                  <li class="desc-pull-m">UNITARIO: $2 + IVA</li>
-                </ul>
-                <p class="aling-precios">Caracteristicas</p>
-
-                <ul class="features">
-                  <li class="desc-cal-m">
-                    Discreción y comodidad como ropa interior
-                  </li>
-                  <li class="desc-cal-m">
-                    Suave, transpirable y fácil de usar
-                  </li>
-                </ul>
-
-                <p class="extra">Se adapta a tu día a día.</p>
+              <div class="product-tabs">
+                <button class="tab-btn active" data-target="1" data-talla="m">
+                  MEDIANO
+                </button>
+                <button class="tab-btn" data-target="1" data-talla="g">
+                  GRANDE
+                </button>
               </div>
 
-              <div class="tab-panel" data-talla="g">
-                <p class="subtitle">
-                  <strong>Se mueve contigo.</strong><br />
-                  Fácil de usar, ideal para adultos activos con incontinencia
-                  leve a moderada.
-                </p>
+              <div class="tab-content">
+                <div class="tab-panel active" data-talla="m">
+                  <p class="subtitle">
+                    <strong>Máxima absorción y comodidad.</strong><br />
+                    Fácil de usar, con o sin ayuda.
+                  </p>
 
-                <p class="aling-precios">PRECIOS</p>
-                <ul class="features">
-                  <li class="desc-pull-m">CAJA: $9 millones + IVA</li>
-                  <li class="desc-pull-m">UNITARIO: $2 + IVA</li>
-                </ul>
-                <p class="aling-precios">Caracteristicas</p>
+                  <p class="aling-precios">PRECIOS</p>
+                  <ul class="features">
+                    <li class="desc-pull-m">CAJA: $9 millones + IVA</li>
+                    <li class="desc-pull-m">UNITARIO: $2 + IVA</li>
+                  </ul>
+                  <p class="aling-precios">Caracteristicas</p>
 
-                <ul class="features">
-                  <li class="desc-cal-g">
-                    Discreción y comodidad como ropa interior
-                  </li>
-                  <li class="desc-cal-g">
-                    Suave, transpirable y fácil de usar
-                  </li>
-                </ul>
+                  <ul class="features">
+                    <li class="desc-pull-m">
+                      Ajuste seguro con pestañas adhesivas
+                    </li>
+                    <li class="desc-pull-m">
+                      Protección contra filtraciones y olores
+                    </li>
+                  </ul>
 
-                <p class="extra">Se adapta a tu día a día.</p>
+                  <p class="extra">
+                    Comodidad todo el día, sin complicaciones.
+                  </p>
+                </div>
+
+                <div class="tab-panel" data-talla="g">
+                  <p class="subtitle">
+                    <strong>Máxima absorción y comodidad.</strong><br />
+                    Fácil de usar, con o sin ayuda.
+                  </p>
+
+                  <p class="aling-precios">PRECIOS</p>
+                  <ul class="features">
+                    <li class="desc-pull-m">CAJA: $9 millones + IVA</li>
+                    <li class="desc-pull-m">UNITARIO: $2 + IVA</li>
+                  </ul>
+                  <p class="aling-precios">Caracteristicas</p>
+
+                  <ul class="features">
+                    <li class="desc-pull-g">
+                      Ajuste seguro con pestañas adhesivas
+                    </li>
+                    <li class="desc-pull-g">
+                      Protección contra filtraciones y olores
+                    </li>
+                  </ul>
+
+                  <p class="extra">
+                    Comodidad todo el día, sin complicaciones.
+                  </p>
+                </div>
+                <button class="btn-wsp" data-producto="Pañal abierto">
+                  Click para info
+                </button>
               </div>
-              <button class="btn-wsp" data-producto="Ropa interior desechable">
-                Click para info
-              </button>
             </div>
           </div>
-        </div>
 
-        <!-- CARD 3 -->
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="product-card orange-card">
-            <div class="img-circle orange">
-              <img src="static/img/panales/predo.png" class="product-img unitalla-img"
-                data-base="static/img/panales/predo.png" data-active="static/img/panales/predoblado.png" />
-            </div>
-            <h5 class="title orange-text">
-              Pañal <span id="pato">predoblado</span>
-            </h5>
-
-            <div class="product-tabs">
-              <button class="tab-btn unitalla-btn active" data-talla="unitalla">
-                UNITALLA
-              </button>
-            </div>
-
-            <div class="tab-content">
-              <div class="tab-panel active">
-                <p class="subtitle">
-                  <strong>Protección mientras descansas.</strong><br />
-                  Fácil de usar, ideal para uso nocturno, viajes o
-                  recuperación.
-                </p>
-
-                <p class="aling-precios">PRECIOS</p>
-                <ul class="features">
-                  <li class="desc-pull-m">CAJA: $9 millones + IVA</li>
-                  <li class="desc-pull-m">UNITARIO: $2 + IVA</li>
-                </ul>
-                <p class="aling-precios">Caracteristicas</p>
-
-                <ul class="features">
-                  <li class="desc-predo">Protege superficies</li>
-                  <li class="desc-predo">Base antiderrapante</li>
-                </ul>
-
-                <p class="extra">
-                  Duerme con confianza y comodidad.
-                </p>
+          <!-- CARD 2 -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card green-card">
+              <div class="img-circle green">
+                <img
+                  src="static/img/panales/calzon.png"
+                  class="product-img"
+                  data-m="static/img/panales/calzon mediano.png"
+                  data-g="static/img/panales/calzon grande.png"
+                />
               </div>
-              <button class="btn-wsp" data-producto="Pañal predoblado">
-                Click para info
-              </button>
+
+              <h5 class="title green-text">
+                Ropa interior <span id="des">Desechable</span>
+              </h5>
+
+              <div class="product-tabs">
+                <button class="tab-btn active" data-target="2" data-talla="m">
+                  MEDIANO
+                </button>
+                <button class="tab-btn" data-target="2" data-talla="g">
+                  GRANDE
+                </button>
+              </div>
+
+              <div class="tab-content">
+                <div class="tab-panel active" data-talla="m">
+                  <p class="subtitle">
+                    <strong>Se mueve contigo.</strong><br />
+                    Fácil de usar, ideal para adultos activos con incontinencia
+                    leve a moderada.
+                  </p>
+                  <p class="aling-precios">PRECIOS</p>
+                  <ul class="features">
+                    <li class="desc-pull-m">CAJA: $9 millones + IVA</li>
+                    <li class="desc-pull-m">UNITARIO: $2 + IVA</li>
+                  </ul>
+                  <p class="aling-precios">Caracteristicas</p>
+
+                  <ul class="features">
+                    <li class="desc-cal-m">
+                      Discreción y comodidad como ropa interior
+                    </li>
+                    <li class="desc-cal-m">
+                      Suave, transpirable y fácil de usar
+                    </li>
+                  </ul>
+
+                  <p class="extra">Se adapta a tu día a día.</p>
+                </div>
+
+                <div class="tab-panel" data-talla="g">
+                  <p class="subtitle">
+                    <strong>Se mueve contigo.</strong><br />
+                    Fácil de usar, ideal para adultos activos con incontinencia
+                    leve a moderada.
+                  </p>
+
+                  <p class="aling-precios">PRECIOS</p>
+                  <ul class="features">
+                    <li class="desc-pull-m">CAJA: $9 millones + IVA</li>
+                    <li class="desc-pull-m">UNITARIO: $2 + IVA</li>
+                  </ul>
+                  <p class="aling-precios">Caracteristicas</p>
+
+                  <ul class="features">
+                    <li class="desc-cal-g">
+                      Discreción y comodidad como ropa interior
+                    </li>
+                    <li class="desc-cal-g">
+                      Suave, transpirable y fácil de usar
+                    </li>
+                  </ul>
+
+                  <p class="extra">Se adapta a tu día a día.</p>
+                </div>
+                <button
+                  class="btn-wsp"
+                  data-producto="Ropa interior desechable"
+                >
+                  Click para info
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col-lg-4 col-md-6 col-12">
+            <div class="product-card orange-card">
+              <div class="img-circle orange">
+                <img
+                  src="static/img/panales/predo.png"
+                  class="product-img unitalla-img"
+                  data-base="static/img/panales/predo.png"
+                  data-active="static/img/panales/predoblado.png"
+                />
+              </div>
+              <h5 class="title orange-text">
+                Pañal <span id="pato">predoblado</span>
+              </h5>
+
+              <div class="product-tabs">
+                <button
+                  class="tab-btn unitalla-btn active"
+                  data-talla="unitalla"
+                >
+                  UNITALLA
+                </button>
+              </div>
+
+              <div class="tab-content">
+                <div class="tab-panel active">
+                  <p class="subtitle">
+                    <strong>Protección mientras descansas.</strong><br />
+                    Fácil de usar, ideal para uso nocturno, viajes o
+                    recuperación.
+                  </p>
+
+                  <p class="aling-precios">PRECIOS</p>
+                  <ul class="features">
+                    <li class="desc-pull-m">CAJA: $9 millones + IVA</li>
+                    <li class="desc-pull-m">UNITARIO: $2 + IVA</li>
+                  </ul>
+                  <p class="aling-precios">Caracteristicas</p>
+
+                  <ul class="features">
+                    <li class="desc-predo">Protege superficies</li>
+                    <li class="desc-predo">Base antiderrapante</li>
+                  </ul>
+
+                  <p class="extra">Duerme con confianza y comodidad.</p>
+                </div>
+                <button class="btn-wsp" data-producto="Pañal predoblado">
+                  Click para info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- products section final-->
+
+    <!-- deliver section inicio-->
+    <section class="delivery-hero">
+      <div class="delivery-wrapper">
+        <div class="delivery-card active">
+          <div class="card-content">
+            <div class="image-box">
+              <img src="static/img/entregas/entrega1.jpg" alt="Entrega 1" />
+              <div class="badge">Entrega Verificada</div>
+            </div>
+            <div class="text-box">
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <blockquote class="testimonial">
+                "Entrega rapidísima, todo llegó en perfecto estado.
+                Definitivamente volveré a pedir."
+              </blockquote>
+              <cite class="author">— Cliente, CDMX</cite>
             </div>
           </div>
         </div>
 
-      </div>
-    </div>
-  </section>
-  <!-- products section final-->
-
-  <!-- deliver section inicio-->
-  <section class="delivery-hero">
-    <div class="delivery-wrapper">
-
-      <div class="delivery-card active">
-        <div class="card-content">
-          <div class="image-box">
-            <img src="static/img/entregas/entrega1.jpg" alt="Entrega 1">
-            <div class="badge">Entrega Verificada</div>
-          </div>
-          <div class="text-box">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <blockquote class="testimonial">"Entrega rapidísima, todo llegó en perfecto estado. Definitivamente volveré
-              a pedir."</blockquote>
-            <cite class="author">— Cliente, CDMX</cite>
+        <div class="delivery-card">
+          <div class="card-content">
+            <div class="image-box">
+              <img src="static/img/entregas/entrega2.jpg" alt="Entrega 2" />
+              <div class="badge">Entrega Verificada</div>
+            </div>
+            <div class="text-box">
+              <div class="stars">⭐⭐⭐⭐⭐</div>
+              <blockquote class="testimonial">
+                "Muy buen servicio, el empaque venía muy bien protegido. Súper
+                recomendado."
+              </blockquote>
+              <cite class="author">— Cliente, Puebla</cite>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="delivery-card">
-        <div class="card-content">
-          <div class="image-box">
-            <img src="static/img/entregas/entrega2.jpg" alt="Entrega 2">
-            <div class="badge">Entrega Verificada</div>
+    <!-- ==============disponibilidad y reseñas seccion=============== -->
+    <section class="availability-section">
+      <div class="availability">
+        <h2>Disponibilidad</h2>
+        <p>
+          Operamos en las principales zonas con entregas rápidas y confiables.
+          Nuestros distribuidores hablan por nosotros.
+        </p>
+
+        <div class="availability-grid">
+          <div class="card-cobertura">
+            <div class="card-header">
+              <div class="title-with-icon">
+                <span class="icon-map">📍</span>
+                <h3>Zonas de cobertura</h3>
+              </div>
+              <p class="subtitle">Cobertura actualizada en tiempo real</p>
+            </div>
+
+            <div class="table-container">
+              <div class="table-row">
+                <div class="row-info">
+                  <span class="check-icon">✓</span>
+                  <span class="zona-nombre">Zona Metropolitana</span>
+                </div>
+                <div class="row-status">
+                  <span class="time-text">🕒 12–24h</span>
+                  <span class="badge badge-activo">Activo</span>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="row-info">
+                  <span class="check-icon">✓</span>
+                  <span class="zona-nombre">Zona Norte</span>
+                </div>
+                <div class="row-status">
+                  <span class="time-text">🕒 24h</span>
+                  <span class="badge badge-activo">Activo</span>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="row-info">
+                  <span class="check-icon">✓</span>
+                  <span class="zona-nombre">Zona Occidente</span>
+                </div>
+                <div class="row-status">
+                  <span class="time-text">🕒 24–48h</span>
+                  <span class="badge badge-activo">Activo</span>
+                </div>
+              </div>
+              <div class="table-row">
+                <div class="row-info">
+                  <span class="check-icon">✓</span>
+                  <span class="zona-nombre">Zona Sur</span>
+                </div>
+                <div class="row-status">
+                  <span class="time-text">🕒 48–72h</span>
+                  <span class="badge badge-consulta">Bajo consulta</span>
+                </div>
+              </div>
+              <div class="table-row no-border">
+                <div class="row-info">
+                  <span class="check-icon">✓</span>
+                  <span class="zona-nombre">Interior del País</span>
+                </div>
+                <div class="row-status">
+                  <span class="time-text">🕒 48–72h</span>
+                  <span class="badge badge-disponible">Disponible</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="text-box">
-            <div class="stars">⭐⭐⭐⭐⭐</div>
-            <blockquote class="testimonial">"Muy buen servicio, el empaque venía muy bien protegido. Súper recomendado."
-            </blockquote>
-            <cite class="author">— Cliente, Puebla</cite>
+
+          <div class="column-reviews">
+            <div class="review-card">
+              <span class="quote-mark">❞</span>
+              <p class="review-text">
+                "Llevamos 2 años trabajando con PañalPro. Siempre cumplen con
+                los tiempos y el producto llega en perfectas condiciones. Muy
+                recomendados."
+              </p>
+              <div class="review-footer">
+                <div class="author-info">
+                  <strong>María González</strong>
+                  <span>Propietaria de Farmacia</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <span class="quote-mark">❞</span>
+              <p class="review-text">
+                "Los precios mayoristas son muy competitivos y el soporte que
+                nos brindan es excelente. El stock siempre está disponible."
+              </p>
+              <div class="review-footer">
+                <div class="author-info">
+                  <strong>Carlos Ramírez</strong>
+                  <span>Distribuidor Independiente</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <span class="quote-mark">❞</span>
+              <p class="review-text">
+                "Hicimos el primer pedido por WhatsApp y llegó al día siguiente.
+                El proceso es muy sencillo y profesional."
+              </p>
+              <div class="review-footer">
+                <div class="author-info">
+                  <strong>Ana Martínez</strong>
+                  <span>Gerente de Tienda</span>
+                </div>
+                <div class="stars">★★★★★</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <!-- ==============Fin de disponibilidad y reseñas seccion=============== -->
 
-    </div>
-  </section>
-
-
-  <!-- disponibilidad y reseñas seccion -->
-  <section>
-
-  </section>
-
-  <!-- FAQ seccion -->
-  <section class="faq-section">
-    <h2>Todo lo que necesitas saber</h2>
-    <p class="subtitle">Resolvemos tus dudas para que puedas empezar a distribuir con confianza.</p>
-
-    <div class="faq-container">
-      <div class="faq-item">
-        <button class="faq-question">
-          ¿Cuál es el pedido mínimo de pañales?
-          <span class="icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>El pedido mínimo es de 1 caja por referencia (aprox. 50–100 unidades según la absorbencia y talla). Para
-            nuevos distribuidores de pañales, ofrecemos un paquete de prueba inicial.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          ¿A qué zonas realizan entregas?
-          <span class="icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Realizamos envíos a toda la República. El tiempo y costo dependen del volumen de la carga y la ubicación
-            del centro de distribución.</p>
-        </div>
-      </div>
-
-      <div class="faq-item">
-        <button class="faq-question">
-          ¿Los pañales cuentan con garantía de absorción?
-          <span class="icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <p>Sí, todos nuestros productos de higiene adulta cumplen con certificaciones de calidad. Si el producto
-            presenta algún defecto de fábrica, garantizamos el cambio físico inmediato.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- fin FAQ -->
-
-  <!-- boton whatsapp -->
-  <a href="https://wa.me/+525573824400" class="btn-flotante" id="btnFlotante" target="_blank">
-    <i class="fab fa-whatsapp"></i>
-    <span>¿Dudas? Escríbenos</span>
-  </a>
-  <!-- fin boton whatsapp -->
-
-  <!-- footer seccion -->
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div class="social-icons">
-        <a href="#" class="icon-link tiktok"><img src="static/img/iconos/tiktok.png" alt="TikTok"></a>
-        <a href="#" class="icon-link instagram"><img src="static/img/iconos/instagram.png" alt="Instagram"></a>
-        <a href="#" class="icon-link facebook"><img src="static/img/iconos/facebook.png" alt="Facebook"></a>
-        <a href="mailto:lencioboco@gmail.com" class="icon-link gmail"><img src="static/img/iconos/gmail.png" alt="Gmail"></a>
-      </div>
-
-      <ul class="footer-menu">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Beneficios</a></li>
-        <li><a href="#">Catalogo</a></li>
-        <li><a href="#">Entregas</a></li>
-        <li><a href="#">Disponibilidad</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-bottom">
-      <p>Copyright ©2026; by <span class="designer-name">Distribuciones Ledezma</span></p>
-    </div>
-  </footer>
-  <!-- final footer -->
-
-  <script src="static/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-
-  <script>
-    const video = document.getElementById("miVideo");
-
-    video.addEventListener("click", () => {
-      if (video.paused) {
-        video.play();
-        video.controls = true; // aparecen controles
-      } else {
-        video.pause();
-      }
-    });
-
-    // Opcional: quitar controles cuando termina
-    video.addEventListener("ended", () => {
-      video.controls = false;
-    });
-  </script>
-</body>
-
+    <script src="static/js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

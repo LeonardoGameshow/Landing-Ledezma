@@ -24,7 +24,9 @@ body {
 }
 
 .navbar-nav .nav-link {
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
   border-radius: 2.813rem;
   padding: 0.5rem 1rem;
 }
@@ -61,18 +63,17 @@ body {
 
 /*Fin video*/
 
-/*=========Fin de los estilos de la sección header====================*/
+/*================Estilos de la sección beneficios====================*/
 /* Sección */
 
-.beneficios {
+.benefits {
   text-align: center;
 }
-
-.beneficios h2 {
+.benefits h2 {
   margin-bottom: 1rem;
 }
 
-.beneficios p {
+.benefits p {
   max-width: 37.5rem;
   margin: 0 auto 2rem;
 }
@@ -83,32 +84,36 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   padding-bottom: 4.5rem;
-  max-width: 81.25rem;
+  max-width: 71rem;
   margin: 0 auto;
 }
 
-/* Card */
 .card {
   padding: 2rem;
-  border-radius: 1.25rem;
-  background: linear-gradient(135deg, #275dca, #8ab3ff);
-  color: white;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #f0f7ff 100%); 
+  border: 0.063rem solid #e1e8f0;
+  color: #2c3e50;
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover */
-.card:hover {
-  transform: translateY(-0.313rem);
-  box-shadow: 0 0.625rem 1.563rem rgba(0, 0, 0, 0.2);
-}
-
-/* Títulos */
 .card h3 {
-  margin-bottom: 0.5rem;
+  color: #275dca;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
 }
 
-/*================Estilos de la sección beneficios====================*/
+.card p {
+  color: #5a6a85;
+  font-size: 0.95rem;
+}
+
+.card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 0.938rem 2.188rem rgba(39, 93, 202, 0.1);
+  border-color: #275dca;
+}
 
 /*=========Fin de los estilos de la sección beneficios================*/
 
@@ -124,7 +129,6 @@ body {
   margin-bottom: 2rem;
   padding: 1rem;
   max-width: 75rem;
-  /* 1200px aprox para que no se estire infinito */
   margin: 0 auto;
 }
 
@@ -208,6 +212,10 @@ body {
   border-color: #5ebbbe;
 }
 
+.tab-content {
+  margin-top: 0.5rem;
+  flex-grow: 1;
+}
 .tab-content {
   margin-top: 0.5rem;
   flex-grow: 1;
@@ -353,13 +361,14 @@ body {
   .title {
     font-size: 1.3rem;
   }
-
   .product-card {
     padding: 1rem;
   }
-
   .product-img {
     width: 8rem;
+  }
+  .product-section{
+    margin-bottom: -6rem;
   }
 }
 
@@ -667,6 +676,197 @@ body {
   transform: rotate(45deg);
   /* Rota el icono 45 grados */
 }
+/*================Estilos de la sección Disponibilidad====================*/
+.availability-section {
+  padding: 0.625rem 1.25rem;
+  background-color: #fcfcfc;
+}
+
+.availability {
+  max-width: 68.75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.availability h2 {
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 0.625rem;
+}
+
+.availability p {
+  color: #666;
+  max-width: 37.5rem;
+  margin: 0 auto 2.5rem;
+}
+
+/* Layout Grid */
+.availability-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.875rem;
+  text-align: left;
+}
+
+/* Card Cobertura (Izquierda) */
+.card-cobertura {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.875rem;
+  box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.05);
+  border: 0.063rem solid #f0f0f0;
+}
+
+.title-with-icon {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.icon-map {
+  color: #00b4ff;
+  font-size: 1.2rem;
+}
+
+.card-cobertura h3 {
+  margin: 0;
+  color: #1a1a1a;
+  font-size: 1.3rem;
+}
+
+.subtitle {
+  color: #999;
+  font-size: 0.9rem;
+  margin-top: 0.313rem;
+}
+
+.table-container {
+  margin-top: 1.563rem;
+}
+
+.table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.125rem 0;
+  border-bottom: 0.063rem solid #f2f2f2;
+}
+
+.no-border {
+  border-bottom: none;
+}
+
+.row-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.check-icon {
+  color: #00b4ff;
+  border: 0.094rem solid #00b4ff;
+  border-radius: 50%;
+  width: 1.125rem;
+  height: 1.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.688rem;
+}
+
+.zona-nombre {
+  color: #444;
+  font-weight: 500;
+}
+
+.row-status {
+  display: flex;
+  align-items: center;
+  gap: 0.938rem;
+}
+
+.time-text {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+/* Badges */
+.badge {
+  padding: 0.313rem 0.75rem;
+  border-radius: 1.25rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.badge-activo {
+  background-color: #e6f9ed;
+  color: #2ecc71;
+}
+
+.badge-consulta {
+  background-color: #fff8e1;
+  color: #f1c40f;
+}
+
+.badge-disponible {
+  background-color: #f0f2f5;
+  color: #95a5a6;
+}
+
+/* Columna Reseñas (Derecha) */
+.column-reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.review-card {
+  background: white;
+  border-radius: 1.5rem;
+  padding: 1.563rem;
+  box-shadow: 0 0.5rem 1.563rem rgba(0, 0, 0, 0.04);
+  border: 0.063rem solid #f0f0f0;
+  position: relative;
+}
+
+.quote-mark {
+  color: #ccefff;
+  font-size: 3rem;
+  line-height: 1;
+  display: block;
+  margin-bottom: -0.625rem;
+}
+
+.review-text {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 0.938rem;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.author-info strong {
+  display: block;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.author-info span {
+  color: #999;
+  font-size: 0.8rem;
+}
+
+.stars {
+  color: #f1c40f;
+  letter-spacing: 0.125rem;
+  font-size: 0.9rem;
+}
+/*================Fin estilos de la sección Disponibilidad====================*/
 
 /*=============RESPONSIVE==================*/
 /*================Navbar, Header y video===================*/
@@ -690,10 +890,8 @@ body {
   }
 }
 
-
 /* Celulares */
 @media (max-width: 768px) {
-
   .navbar {
     flex-direction: column;
     padding: 0.5rem;
@@ -716,7 +914,7 @@ body {
 
   .video-container video {
     max-width: 80%;
-    border-radius: 10px;
+    border-radius: 0.625rem;
   }
 }
 
@@ -958,3 +1156,76 @@ body {
     font-size: 0.9375rem; /* 15px */
   }
 }
+
+/*================Beneficios===================*/
+/* Tablets */
+@media (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 0 1.5rem 3rem;
+  }
+
+  .card {
+    padding: 1.8rem;
+  }
+}
+
+/* Celulares grandes */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 0 1.2rem 3rem;
+  }
+
+  .benefits h2 {
+    font-size: 1.6rem;
+  }
+
+  .benefits p {
+    font-size: 0.95rem;
+    padding: 0 1rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Celulares pequeños */
+@media (max-width: 480px) {
+  .benefits {
+    padding: 2rem;
+  }
+  .benefits h2 {
+    font-size: 1.4rem;
+  }
+
+  .card {
+    padding: 1.3rem;
+    border-radius: 1.2rem;
+    margin-top: -0.5rem;
+  }
+
+  .cards-container {
+    gap: 1.2rem;
+  }
+}
+
+/*================Disponibilidad===================*/
+
+@media (max-width: 768px) {
+  .availability-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
